@@ -1,0 +1,36 @@
+unit Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TFrmLogin = class(TForm)
+    Panel1: TPanel;
+    imgFundo: TImage;
+    pnlLogin: TPanel;
+    imgLogin: TImage;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmLogin.FormShow(Sender: TObject);
+begin
+    pnlLogin.Top := (Self.Height div 2) - (pnlLogin.Height div 2);
+    pnlLogin.Left := (Self.Width div 2) - (pnlLogin.Width div 2);
+end;
+
+end.
