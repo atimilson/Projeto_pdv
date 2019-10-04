@@ -1,0 +1,24 @@
+unit Funcionarios;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TfrmFuncionarios = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFuncionarios: TfrmFuncionarios;
+
+implementation
+
+{$R *.dfm}
+
+end.

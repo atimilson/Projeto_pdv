@@ -1,0 +1,141 @@
+object frmFuncionarios: TfrmFuncionarios
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Funcionarios'
+  ClientHeight = 368
+  ClientWidth = 794
+  Color = clGradientInactiveCaption
+  DragMode = dmAutomatic
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 72
+    Top = 83
+    Width = 34
+    Height = 13
+    Caption = 'Nome :'
+  end
+  object Label2: TLabel
+    Left = 256
+    Top = 83
+    Width = 26
+    Height = 13
+    Caption = 'CPF :'
+  end
+  object Label3: TLabel
+    Left = 440
+    Top = 83
+    Width = 49
+    Height = 13
+    Caption = 'Telefone :'
+  end
+  object Label4: TLabel
+    Left = 72
+    Top = 110
+    Width = 52
+    Height = 13
+    Caption = 'Endere'#231'o :'
+  end
+  object Label5: TLabel
+    Left = 440
+    Top = 110
+    Width = 49
+    Height = 13
+    Caption = 'Telefone :'
+  end
+  object txtBuscarNome: TEdit
+    Left = 665
+    Top = 8
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object rbNome: TRadioButton
+    Left = 546
+    Top = 10
+    Width = 47
+    Height = 17
+    Caption = 'Nome'
+    TabOrder = 1
+  end
+  object rbCpf: TRadioButton
+    Left = 608
+    Top = 10
+    Width = 41
+    Height = 17
+    Caption = 'CPF'
+    TabOrder = 2
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 665
+    Top = 35
+    Width = 120
+    Height = 21
+    EditMask = '000.000.000-00;1;_'
+    MaxLength = 14
+    TabOrder = 3
+    Text = '   .   .   -  '
+  end
+  object Edit1: TEdit
+    Left = 112
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Left = 296
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit3: TEdit
+    Left = 495
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object Edit4: TEdit
+    Left = 130
+    Top = 107
+    Width = 287
+    Height = 21
+    TabOrder = 7
+  end
+  object ComboBox1: TComboBox
+    Left = 495
+    Top = 107
+    Width = 145
+    Height = 21
+    ParentCustomHint = False
+    BiDiMode = bdLeftToRight
+    Ctl3D = False
+    DoubleBuffered = False
+    DragKind = dkDock
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentCtl3D = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 8
+    TabStop = False
+    Text = 'ComboBox1'
+  end
+end
