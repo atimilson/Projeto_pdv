@@ -8,6 +8,7 @@ object dm: Tdm
       'Database=pdv'
       'User_Name=root'
       'DriverID=MySQL')
+    Connected = True
     LoginPrompt = False
     Left = 32
     Top = 32
@@ -29,6 +30,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object tb_Cargoscargo: TStringField
       FieldName = 'cargo'
@@ -53,5 +55,69 @@ object dm: Tdm
     Provider = 'Forms'
     Left = 424
     Top = 40
+  end
+  object tb_func: TFDTable
+    Connection = fd
+    UpdateOptions.UpdateTableName = 'pdv.funcionarios'
+    TableName = 'pdv.funcionarios'
+    Left = 176
+    Top = 32
+  end
+  object query_func: TFDQuery
+    Connection = fd
+    SQL.Strings = (
+      'select * from funcionarios where 1=1')
+    Left = 112
+    Top = 96
+    object query_funcid: TIntegerField
+      DisplayLabel = 'ID'
+      DisplayWidth = 7
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Visible = False
+    end
+    object query_funcnome: TStringField
+      DisplayLabel = 'NOME'
+      DisplayWidth = 20
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 50
+    end
+    object query_funccpf: TStringField
+      DisplayWidth = 15
+      FieldName = 'cpf'
+      Origin = 'cpf'
+      Required = True
+    end
+    object query_functelefone: TStringField
+      FieldName = 'telefone'
+      Origin = 'telefone'
+      Required = True
+      Size = 15
+    end
+    object query_funcendereco: TIntegerField
+      FieldName = 'endereco'
+      Origin = 'endereco'
+      Required = True
+    end
+    object query_funccargo: TStringField
+      FieldName = 'cargo'
+      Origin = 'cargo'
+      Required = True
+      Size = 25
+    end
+    object query_funcdata_cadastro: TSQLTimeStampField
+      AutoGenerateValue = arDefault
+      FieldName = 'data_cadastro'
+      Origin = 'data_cadastro'
+    end
+  end
+  object ds_func: TDataSource
+    DataSet = query_func
+    Left = 112
+    Top = 176
   end
 end

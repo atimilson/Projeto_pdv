@@ -15,6 +15,7 @@ object frmFuncionarios: TfrmFuncionarios
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -147,6 +148,7 @@ object frmFuncionarios: TfrmFuncionarios
     Width = 73
     Height = 40
     Caption = 'Salvar'
+    Enabled = False
     Flat = True
     Glyph.Data = {
       FA090000424DFA09000000000000360000002800000019000000190000000100
@@ -236,6 +238,7 @@ object frmFuncionarios: TfrmFuncionarios
     Width = 73
     Height = 40
     Caption = 'Editar'
+    Enabled = False
     Flat = True
     Glyph.Data = {
       FA090000424DFA09000000000000360000002800000019000000190000000100
@@ -325,6 +328,7 @@ object frmFuncionarios: TfrmFuncionarios
     Width = 73
     Height = 40
     Caption = 'Excluir'
+    Enabled = False
     Flat = True
     Glyph.Data = {
       FA090000424DFA09000000000000360000002800000019000000190000000100
@@ -425,7 +429,7 @@ object frmFuncionarios: TfrmFuncionarios
   end
   object rbCpf: TRadioButton
     Left = 512
-    Top = 10
+    Top = 8
     Width = 41
     Height = 17
     Caption = 'CPF'
@@ -487,6 +491,7 @@ object frmFuncionarios: TfrmFuncionarios
     Top = 184
     Width = 657
     Height = 120
+    DataSource = dm.ds_func
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
