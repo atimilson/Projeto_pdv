@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
+<<<<<<< HEAD
 	<Transactions>
     <Transaction>2019/09/20 22:09:14.000.086,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2019/09/21 09:33:13.000.224,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Login.dfm</Transaction>
@@ -32,5 +33,39 @@
     <Transaction>2019/09/21 19:51:19.000.299,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
     <Transaction>2019/09/21 19:52:13.000.035,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\module\module.dfm</Transaction>
     <Transaction>2019/09/21 19:52:13.000.035,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\module\module.pas</Transaction>
+=======
+  <Transactions>
+    <Transaction>2019/09/20 22:09:14.086,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 09:33:13.224,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Login.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 09:33:13.224,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Login.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 09:33:16.881,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\PDV.dproj=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/09/21 10:34:14.347,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 10:34:42.062,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Menu.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 10:34:42.062,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Menu.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 15:13:04.936,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 15:13:19.096,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Usuarios.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 15:13:19.096,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Usuarios.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 15:20:51.073,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:21:08.957,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 15:22:26.118,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Funcionarios.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 15:22:26.118,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Funcionarios.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 15:22:32.585,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\PDV.dproj=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\PDV.dproj</Transaction>
+    <Transaction>2019/09/21 15:22:32.805,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\default.txvpck</Transaction>
+    <Transaction>2019/09/21 15:22:32.823,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\PDV\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:22:32.836,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\Login\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:22:32.850,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\Menu\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:22:32.866,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\Usuarios\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:22:32.884,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\Funcionarios\default.txaPackage</Transaction>
+    <Transaction>2019/09/21 15:23:52.783,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\PDV.dproj=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\PDV.dproj</Transaction>
+    <Transaction>2019/09/21 15:23:52.869,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\ModelSupport_PDV\PDV\default.txvpck</Transaction>
+    <Transaction>2019/09/21 17:41:37.828,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 17:41:49.477,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Cargos.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 17:41:49.477,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Cargos.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 17:42:17.472,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Usuarios.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Usuarios.pas</Transaction>
+    <Transaction>2019/09/21 17:42:17.473,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Cadastros\Usuarios.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Usuarios.dfm</Transaction>
+    <Transaction>2019/09/21 19:51:19.299,=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+    <Transaction>2019/09/21 19:52:13.035,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\module\module.dfm=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.dfm</Transaction>
+    <Transaction>2019/09/21 19:52:13.035,C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\module\module.pas=C:\Users\Ninja\Documents\Embarcadero\Studio\Projects\PDV\Unit1.pas</Transaction>
+>>>>>>> remotes/Atimilson/master
   </Transactions>
 </BorlandProject>

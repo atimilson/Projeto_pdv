@@ -5,7 +5,11 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.StdCtrls, Data.DB,
+<<<<<<< HEAD
   Vcl.Buttons, Vcl.Grids, Vcl.DBGrids, module;
+=======
+  Vcl.Buttons, Vcl.Grids, Vcl.DBGrids;
+>>>>>>> remotes/Atimilson/master
 
 type
   TfrmFuncionarios = class(TForm)
@@ -28,6 +32,7 @@ type
     btnSalvar: TSpeedButton;
     btnEditar: TSpeedButton;
     btnExcluir: TSpeedButton;
+<<<<<<< HEAD
     procedure FormShow(Sender: TObject);
   private
     { Private declarations }
@@ -38,6 +43,10 @@ type
     procedure limpar;
     procedure habilitarCampos;
     procedure desabilitarCampos;
+=======
+  private
+    { Private declarations }
+>>>>>>> remotes/Atimilson/master
   public
     { Public declarations }
   end;
@@ -49,6 +58,7 @@ implementation
 
 {$R *.dfm}
 
+<<<<<<< HEAD
 { TfrmFuncionarios }
 
 procedure TfrmFuncionarios.associarCampos;
@@ -103,4 +113,6 @@ begin
 
 end;
 
+=======
+>>>>>>> remotes/Atimilson/master
 end.

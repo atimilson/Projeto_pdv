@@ -8,7 +8,10 @@ object dm: Tdm
       'Database=pdv'
       'User_Name=root'
       'DriverID=MySQL')
+<<<<<<< HEAD
     Connected = True
+=======
+>>>>>>> remotes/Atimilson/master
     LoginPrompt = False
     Left = 32
     Top = 32
@@ -30,7 +33,10 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+<<<<<<< HEAD
       ReadOnly = True
+=======
+>>>>>>> remotes/Atimilson/master
     end
     object tb_Cargoscargo: TStringField
       FieldName = 'cargo'
@@ -56,6 +62,7 @@ object dm: Tdm
     Left = 424
     Top = 40
   end
+<<<<<<< HEAD
   object tb_func: TFDTable
     Connection = fd
     UpdateOptions.UpdateTableName = 'pdv.funcionarios'
@@ -120,4 +127,6 @@ object dm: Tdm
     Left = 112
     Top = 176
   end
+=======
+>>>>>>> remotes/Atimilson/master
 end
