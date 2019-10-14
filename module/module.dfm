@@ -8,10 +8,7 @@ object dm: Tdm
       'Database=pdv'
       'User_Name=root'
       'DriverID=MySQL')
-<<<<<<< HEAD
     Connected = True
-=======
->>>>>>> remotes/Atimilson/master
     LoginPrompt = False
     Left = 32
     Top = 32
@@ -33,10 +30,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
-<<<<<<< HEAD
       ReadOnly = True
-=======
->>>>>>> remotes/Atimilson/master
     end
     object tb_Cargoscargo: TStringField
       FieldName = 'cargo'
@@ -49,8 +43,8 @@ object dm: Tdm
     Connection = fd
     SQL.Strings = (
       'select * from cargos')
-    Left = 32
-    Top = 96
+    Left = 104
+    Top = 104
   end
   object DataSource1: TDataSource
     DataSet = query_Cargos
@@ -62,71 +56,64 @@ object dm: Tdm
     Left = 424
     Top = 40
   end
-<<<<<<< HEAD
   object tb_func: TFDTable
+    IndexFieldNames = 'id'
     Connection = fd
     UpdateOptions.UpdateTableName = 'pdv.funcionarios'
     TableName = 'pdv.funcionarios'
     Left = 176
     Top = 32
-  end
-  object query_func: TFDQuery
-    Connection = fd
-    SQL.Strings = (
-      'select * from funcionarios where 1=1')
-    Left = 112
-    Top = 96
-    object query_funcid: TIntegerField
-      DisplayLabel = 'ID'
-      DisplayWidth = 7
+    object tb_funcid: TIntegerField
+      AutoGenerateValue = arAutoInc
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      Required = True
-      Visible = False
     end
-    object query_funcnome: TStringField
-      DisplayLabel = 'NOME'
-      DisplayWidth = 20
+    object tb_funcnome: TStringField
       FieldName = 'nome'
       Origin = 'nome'
       Required = True
       Size = 50
     end
-    object query_funccpf: TStringField
-      DisplayWidth = 15
+    object tb_funccpf: TStringField
       FieldName = 'cpf'
       Origin = 'cpf'
       Required = True
     end
-    object query_functelefone: TStringField
+    object tb_functelefone: TStringField
       FieldName = 'telefone'
       Origin = 'telefone'
       Required = True
       Size = 15
     end
-    object query_funcendereco: TIntegerField
+    object tb_funcendereco: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'endereco'
       Origin = 'endereco'
-      Required = True
+      Size = 30
     end
-    object query_funccargo: TStringField
+    object tb_funccargo: TStringField
       FieldName = 'cargo'
       Origin = 'cargo'
       Required = True
       Size = 25
     end
-    object query_funcdata_cadastro: TSQLTimeStampField
+    object tb_funcdata_cadastro: TSQLTimeStampField
       AutoGenerateValue = arDefault
       FieldName = 'data_cadastro'
       Origin = 'data_cadastro'
     end
+  end
+  object query_func: TFDQuery
+    Connection = fd
+    SQL.Strings = (
+      'select * from funcionarios where 1=1')
+    Left = 176
+    Top = 104
   end
   object ds_func: TDataSource
     DataSet = query_func
     Left = 112
     Top = 176
   end
-=======
->>>>>>> remotes/Atimilson/master
 end

@@ -146,7 +146,7 @@ begin
        Exit;
     end;
 
-     associarCampos;
+    associarCampos;
     dm.tb_Cargos.Post;
     MessageDlg('Salvo com sucesso!!',mtInformation,mbOKCancel,0);
     edtNome.Text := '';

@@ -24,13 +24,13 @@ type
     tb_func: TFDTable;
     query_func: TFDQuery;
     ds_func: TDataSource;
-    query_funcid: TIntegerField;
-    query_funcnome: TStringField;
-    query_funccpf: TStringField;
-    query_functelefone: TStringField;
-    query_funcendereco: TIntegerField;
-    query_funccargo: TStringField;
-    query_funcdata_cadastro: TSQLTimeStampField;
+    tb_funcid: TIntegerField;
+    tb_funcnome: TStringField;
+    tb_funccpf: TStringField;
+    tb_functelefone: TStringField;
+    tb_funcendereco: TStringField;
+    tb_funccargo: TStringField;
+    tb_funcdata_cadastro: TSQLTimeStampField;
 
     procedure DataModuleCreate(Sender: TObject);
   private
@@ -52,6 +52,8 @@ procedure Tdm.DataModuleCreate(Sender: TObject);
 begin
   fd.Connected := True;
   tb_Cargos.Active := True;
+  tb_func.Active := True;
+  query_func.Active := True;
   query_Cargos.Active := True;
 end;
 
