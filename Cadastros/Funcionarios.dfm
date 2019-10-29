@@ -323,6 +323,7 @@ object frmFuncionarios: TfrmFuncionarios
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+    OnClick = btnEditarClick
   end
   object btnExcluir: TSpeedButton
     Left = 512
@@ -413,6 +414,7 @@ object frmFuncionarios: TfrmFuncionarios
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+    OnClick = btnExcluirClick
   end
   object txtBuscarNome: TEdit
     Left = 569
@@ -493,11 +495,14 @@ object frmFuncionarios: TfrmFuncionarios
     Top = 184
     Width = 657
     Height = 120
+    DataSource = dm.ds_func
+    Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
 end

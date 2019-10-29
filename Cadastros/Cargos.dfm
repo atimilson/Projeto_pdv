@@ -394,12 +394,12 @@ object frmCargos: TfrmCargos
     TabOrder = 0
   end
   object grid: TDBGrid
-    Left = 32
+    Left = 8
     Top = 75
-    Width = 313
+    Width = 337
     Height = 186
     DataSource = dm.DataSource1
-    Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    Options = [dgTitles, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

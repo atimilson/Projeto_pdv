@@ -74,6 +74,7 @@ begin
 
 
     associarCampos;
+
      dm.query_Cargos.Close;
     dm.query_Cargos.SQL.Clear;
     dm.query_Cargos.SQL.Add('update cargos set cargo = :cargo where id = :id');
