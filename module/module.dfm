@@ -33,6 +33,7 @@ object dm: Tdm
       ReadOnly = True
     end
     object tb_Cargoscargo: TStringField
+      DisplayWidth = 5
       FieldName = 'cargo'
       Origin = 'cargo'
       Required = True
@@ -64,10 +65,12 @@ object dm: Tdm
     Left = 176
     Top = 32
     object tb_funcid: TIntegerField
-      AutoGenerateValue = arAutoInc
+      Alignment = taCenter
+      AutoGenerateValue = arDefault
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
     end
     object tb_funcnome: TStringField
       FieldName = 'nome'

@@ -48,7 +48,7 @@ object frmFuncionarios: TfrmFuncionarios
   end
   object Label5: TLabel
     Left = 440
-    Top = 131
+    Top = 134
     Width = 36
     Height = 13
     Caption = 'Cargo :'
@@ -323,6 +323,7 @@ object frmFuncionarios: TfrmFuncionarios
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+    OnClick = btnEditarClick
   end
   object btnExcluir: TSpeedButton
     Left = 512
@@ -413,6 +414,7 @@ object frmFuncionarios: TfrmFuncionarios
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+    OnClick = btnExcluirClick
   end
   object txtBuscarNome: TEdit
     Left = 569
@@ -420,6 +422,7 @@ object frmFuncionarios: TfrmFuncionarios
     Width = 121
     Height = 21
     TabOrder = 0
+    OnChange = txtBuscarNomeChange
   end
   object rbNome: TRadioButton
     Left = 450
@@ -454,26 +457,19 @@ object frmFuncionarios: TfrmFuncionarios
     Height = 21
     TabOrder = 4
   end
-  object edtCpf: TEdit
-    Left = 296
-    Top = 104
-    Width = 121
-    Height = 21
-    TabOrder = 5
-  end
   object EdtTelefone: TEdit
     Left = 495
     Top = 104
     Width = 121
     Height = 21
-    TabOrder = 6
+    TabOrder = 5
   end
   object edtEndereco: TEdit
     Left = 130
     Top = 131
     Width = 287
     Height = 21
-    TabOrder = 7
+    TabOrder = 6
   end
   object cbxCargo: TComboBox
     Left = 495
@@ -485,7 +481,7 @@ object frmFuncionarios: TfrmFuncionarios
     DragKind = dkDock
     ParentShowHint = False
     ShowHint = False
-    TabOrder = 8
+    TabOrder = 7
     TabStop = False
   end
   object DBGrid1: TDBGrid
@@ -493,11 +489,24 @@ object frmFuncionarios: TfrmFuncionarios
     Top = 184
     Width = 657
     Height = 120
-    TabOrder = 9
+    DataSource = dm.ds_func
+    Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 8
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object edtCpf: TMaskEdit
+    Left = 288
+    Top = 104
+    Width = 118
+    Height = 21
+    EditMask = '000.000.000-00;1;_'
+    MaxLength = 14
+    TabOrder = 9
+    Text = '   .   .   -  '
   end
 end
