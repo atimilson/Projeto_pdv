@@ -68,8 +68,12 @@ object dm: Tdm
       Alignment = taCenter
       AutoGenerateValue = arDefault
       FieldName = 'id'
+      LookupDataSet = query_func
+      LookupKeyFields = 'id'
+      LookupResultField = 'id'
       Origin = 'id'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ProviderFlags = [pfInWhere, pfInKey]
+      MinValue = 1
       Required = True
     end
     object tb_funcnome: TStringField
