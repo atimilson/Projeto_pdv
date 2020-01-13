@@ -31,6 +31,21 @@ type
     tb_funcendereco: TStringField;
     tb_funccargo: TStringField;
     tb_funcdata_cadastro: TSQLTimeStampField;
+    query_usuario: TFDQuery;
+    DS_Usuario: TDataSource;
+    tb_usuarios: TFDTable;
+    query_usuarioid: TFDAutoIncField;
+    query_usuarionome: TStringField;
+    query_usuariousuario: TStringField;
+    query_usuariosenha: TStringField;
+    query_usuariocargo: TStringField;
+    query_usuarioid_funcionario: TIntegerField;
+    tb_usuariosid: TFDAutoIncField;
+    tb_usuariosnome: TStringField;
+    tb_usuariosusuario: TStringField;
+    tb_usuariossenha: TStringField;
+    tb_usuarioscargo: TStringField;
+    tb_usuariosid_funcionario: TIntegerField;
 
     procedure DataModuleCreate(Sender: TObject);
   private
@@ -41,6 +56,15 @@ type
 
 var
   dm: Tdm;
+  idFunc : string;
+  nomeFunc : string;
+  cargoFunc : string;
+
+  chamada : string;
+
+
+  nomeUsuario : string;
+  cargoUsuario: string;
 
 implementation
 

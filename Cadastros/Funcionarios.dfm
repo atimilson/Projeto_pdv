@@ -498,6 +498,7 @@ object frmFuncionarios: TfrmFuncionarios
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
+    OnDblClick = DBGrid1DblClick
   end
   object edtCpf: TMaskEdit
     Left = 288

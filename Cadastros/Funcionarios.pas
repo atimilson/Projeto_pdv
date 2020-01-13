@@ -34,6 +34,7 @@ type
     procedure btnEditarClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure txtBuscarNomeChange(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
   private
     { Private declarations }
     procedure carregarCombobox;
@@ -125,8 +126,8 @@ begin
     end;
 
 
-    associarCampos;
-     dm.query_func.Close;
+
+    dm.query_func.Close;
     dm.query_func.SQL.Clear;
     dm.query_func.SQL.Add('UPDATE funcionarios set nome = :nome, cpf = :cpf, endereco = :endereco, telefone = :telefone, cargo = :cargo  where id = :id');
     dm.query_func.ParamByName('nome').Value := edtNome.Text;
@@ -271,6 +272,18 @@ begin
      cbxCargo.Items.IndexOfName(dm.query_Cargos.FieldByName('cargo').AsString);
   id := dm.query_func.FieldByName('id').Value;
   cpfAntigo := dm.query_func.FieldByName('cpf').Value;
+end;
+
+procedure TfrmFuncionarios.DBGrid1DblClick(Sender: TObject);
+begin
+  if chamada = 'Func' then
+  begin
+    idFunc := dm.query_func.FieldByName('id').Value;
+    nomeFunc := dm.query_func.FieldByName('nome').Value;
+    cargoFunc := dm.query_func.FieldByName('cargo').Value;
+    Close;
+    chamada := '';
+  end;
 end;
 
 procedure TfrmFuncionarios.desabilitarCampos;

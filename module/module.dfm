@@ -14,7 +14,9 @@ object dm: Tdm
     Top = 32
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
-    VendorLib = 'C:\Users\Ninja\Desktop\Arquivos\libmySQL.dll'
+    VendorLib = 
+      'C:\Users\atimi\Documents\Embarcadero\Studio\Arquivos\libmySQL.dl' +
+      'l'
     Left = 568
     Top = 32
   end
@@ -49,7 +51,7 @@ object dm: Tdm
   end
   object DataSource1: TDataSource
     DataSet = query_Cargos
-    Left = 32
+    Left = 96
     Top = 176
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
@@ -69,11 +71,8 @@ object dm: Tdm
       AutoGenerateValue = arDefault
       FieldName = 'id'
       LookupDataSet = query_func
-      LookupKeyFields = 'id'
-      LookupResultField = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
-      MinValue = 1
       Required = True
     end
     object tb_funcnome: TStringField
@@ -120,7 +119,99 @@ object dm: Tdm
   end
   object ds_func: TDataSource
     DataSet = query_func
-    Left = 112
+    Left = 176
     Top = 176
+  end
+  object query_usuario: TFDQuery
+    Active = True
+    Connection = fd
+    SQL.Strings = (
+      'select * from usuarios')
+    Left = 256
+    Top = 104
+    object query_usuarioid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object query_usuarionome: TStringField
+      DisplayWidth = 20
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 30
+    end
+    object query_usuariousuario: TStringField
+      FieldName = 'usuario'
+      Origin = 'usuario'
+      Required = True
+      Size = 25
+    end
+    object query_usuariosenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+      Required = True
+      Size = 25
+    end
+    object query_usuariocargo: TStringField
+      DisplayWidth = 10
+      FieldName = 'cargo'
+      Origin = 'cargo'
+      Required = True
+      Size = 25
+    end
+    object query_usuarioid_funcionario: TIntegerField
+      FieldName = 'id_funcionario'
+      Origin = 'id_funcionario'
+      Required = True
+      Visible = False
+    end
+  end
+  object DS_Usuario: TDataSource
+    DataSet = query_usuario
+    Left = 264
+    Top = 176
+  end
+  object tb_usuarios: TFDTable
+    IndexFieldNames = 'id'
+    Connection = fd
+    UpdateOptions.UpdateTableName = 'pdv.usuarios'
+    TableName = 'pdv.usuarios'
+    Left = 256
+    Top = 32
+    object tb_usuariosid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object tb_usuariosnome: TStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Required = True
+      Size = 30
+    end
+    object tb_usuariosusuario: TStringField
+      FieldName = 'usuario'
+      Origin = 'usuario'
+      Required = True
+      Size = 25
+    end
+    object tb_usuariossenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+      Required = True
+      Size = 25
+    end
+    object tb_usuarioscargo: TStringField
+      FieldName = 'cargo'
+      Origin = 'cargo'
+      Required = True
+      Size = 25
+    end
+    object tb_usuariosid_funcionario: TIntegerField
+      FieldName = 'id_funcionario'
+      Origin = 'id_funcionario'
+      Required = True
+    end
   end
 end
