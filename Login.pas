@@ -34,7 +34,7 @@ implementation
 
 {$R *.dfm}
 
-uses Menu;
+uses Menu, module;
 
 procedure TFrmLogin.btnEntrarClick(Sender: TObject);
 begin
@@ -74,6 +74,20 @@ end;
 procedure TFrmLogin.login;
 begin
 // codigo
+
+   dm.query_usuario.Close;
+   dm.query_usuario.SQL.Clear;
+   dm.query_usuario.SQL.Add('SELECT * from usuarios where usuario = :usuario and senha = :senha');
+   dm.query_usuario.ParamByName('usuario').Value := txtUsuario.Text;
+   dm.query_usuario.ParamByName('senha').Value := txtSenha.Text;
+   dm.query_usuario.Open;
+
+   if not dm.query_usuario.IsEmpty then
+   begin
+      // vai aqui o codigo
+   end;
+   
+
    frmMenu := TfrmMenu.Create(FrmLogin);
    frmMenu.ShowModal;
 end;

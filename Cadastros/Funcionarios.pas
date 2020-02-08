@@ -125,7 +125,12 @@ begin
        end;
     end;
 
-
+    dm.query_usuario.Close;
+    dm.query_usuario.SQL.Clear;
+    dm.query_usuario.SQL.Add('UPDATE usuarios set cargo = :funcionarios where id = :id');
+    dm.query_usuario.ParamByName('id').Value := id;
+    dm.query_usuario.ParamByName('funcionarios').Value := cbxCargo.Text;
+    dm.query_usuario.ExecSQL;
 
     dm.query_func.Close;
     dm.query_func.SQL.Clear;
